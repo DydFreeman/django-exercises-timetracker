@@ -1,0 +1,98 @@
+{ "status" : 200,
+  "body" : [
+  {
+    "name": "qualcosa",
+    "id": 1,
+    "goal": "Strutturare pagina",
+    "result":  "Qualche problema",
+    "activity":  "Indentare tabella",
+    "start_datetime": "ieri a quest'ora",
+    "end_datetime": "ieri a quest'ora piu' un'ora",
+    "delta": 10
+  },
+  {
+    "name": "pippo",
+    "id": 2,
+    "goal": "Redarre rapporto",
+    "result":  "E' andato tutto bene",
+    "activity":  "Scrivere titolo",
+    "start_datetime": "ieri a quest'ora",
+    "end_datetime": "ieri a quest'ora piu' un'ora",
+    "delta": 10
+  },
+   {
+    "name": "pippo",
+    "id": 2,
+    "goal": "Redarre rapporto",
+    "result":  "Sibaritico",
+    "activity":  "Catafratto",
+    "start_datetime": "ieri a quest'ora",
+    "end_datetime": "ieri a quest'ora piu' un'ora",
+    "delta": 10
+  },
+  {
+    "name": "qualcosa",
+    "id": 1,
+    "goal": "leggere relazione",
+    "result":  "Qualche problema",
+    "activity":  "Letta introduzione",
+    "start_datetime": "ieri a quest'ora",
+    "end_datetime": "ieri a quest'ora piu' un'ora",
+    "delta": 10
+  },
+  {
+    "name": "qualcosa",
+    "id": 1,
+    "goal": "Sconosciuto",
+    "result":  "Qualche problema",
+    "activity":  "Nessuno",
+    "start_datetime": "ieri a quest'ora",
+    "end_datetime": "ieri a quest'ora piu' un'ora",
+    "delta": 10
+  },
+  {
+    "name": "prova",
+    "id": 2,
+    "goal": "Sconosciuto",
+    "result":  "Sibaritico",
+    "activity":  "Catafratto",
+    "start_datetime": "ieri a quest'ora",
+    "end_datetime": "ieri a quest'ora piu' un'ora",
+    "delta": 10
+  }
+]
+}
+
+------------- FORMATO ERRORE JSON ------------
+
+
+{ "status" : 505,
+  "body" : [
+  {
+    "msg" : "Descrizione errore di conflitto",
+    "options" : [
+    { "1" : "tieni la prima" }, { "2" : "tieni la seconda"}, { "3" : "aggiusta"}
+    ],
+    "objs" : [
+  {
+    "name": "qualcosa",
+    "id": 1,
+    "goal": "Sconosciuto",
+    "result":  "Qualche problema",
+    "activity":  "Nessuno",
+    "start_datetime": "ieri a quest'ora",
+    "end_datetime": "ieri a quest'ora piu' un'ora",
+    "delta": 10
+  },
+  {
+    "name": "prova",
+    "goal": "Sconosciuto",
+    "result":  "Sibaritico",
+    "activity":  "Catafratto",
+    "start_datetime": "ieri a quest'ora",
+    "end_datetime": "ieri a quest'ora piu' un'ora",
+    "delta": 10
+  }
+]
+    }]
+}

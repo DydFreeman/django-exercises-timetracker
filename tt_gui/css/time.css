@@ -1,0 +1,81 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  /*background-image: url("../images/bg.png");*/
+}
+
+.navbar-time{
+  background-color: #f7f7f7;
+  border-color: #e7e7e7;
+  
+}
+
+.navbar-time a:hover{
+    color: #5CB85C  !important;
+}
+
+.imglogo{
+    height:50px;
+    width:50px;
+}
+
+.navbarbtn{
+    background-color: #5CB85C;
+}
+
+
+.timertd{
+    padding-left: 35px !important;
+}
+
+h1.time,h3.time{
+    font-size: 25px !important;
+    /*margin-top:0px !important;*/
+}
+
+p.timepar{
+    font-size: 12px;
+}
+
+.jumbotime{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 0px
+}
+
+
+select{
+    width:150px !important;
+}
+
+.selection{
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.selecttime{
+    display:inline-table !important;
+}
+
+.titolosel{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.titoloRa{
+    margin-bottom:10px;
+}
+
+.tr-act{
+    display:none;
+    height:0px;
+}
+
+.tr-act td{
+    width: 0px;
+    text-align:left;
+}
+
+.timer{
+    margin-left: 2px;
+}

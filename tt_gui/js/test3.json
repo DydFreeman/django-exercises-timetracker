@@ -1,0 +1,75 @@
+{"ch": [
+        {"name": "timetracker",
+            "ra_list":
+                    [
+                        {"name": "schermata iniziale",
+                            "id": 1,
+                            "users": [1, 2],
+                            "activities":
+                                    [
+                                        {   "name": "XD la pagina",
+                                            "users": [1],
+                                            "start_ts": "0000000",
+                                            "end_ts": "1111111"},
+                                        {   "name": "predisporre contenitore",
+                                            "users": [1],
+                                            "start_ts": "0000000",
+                                            "end_ts": "1111111"},
+                                        {   "name": "scrivere json",
+                                            "users": [1],
+                                            "start_ts": "0000000",
+                                            "end_ts": "1111111"},
+                                        {   "name": "parser json",
+                                            "users": [1],
+                                            "start_ts": "0000000",
+                                            "end_ts": "1111111"},
+                                        {   "name": "aaaaa",
+                                            "users": [1],
+                                            "start_ts": "0000000",
+                                            "end_ts": "1111111"}
+                                    ]}
+                    ]},
+        {"name": "webdeveloping",
+            "ra_list": [
+                {"name": "gestione login",
+                    "id": 2,
+                    "users": [3,4],
+                    "activities": [
+                        {   "name": "strutturare la pagina",
+                            "users": [3],
+                            "start_ts": "0000000",
+                            "end_ts": "1111111"},
+                        {   "name": "parser json",
+                                           "users": [1],
+                                            "start_ts": "0000000",
+                                            "end_ts": "1111111"}
+                    ]},
+                {"name": "pippo",
+                    "id": 3,
+                    "users": [3,4],
+                    "activities": [
+                        {   "name": "WOWXD la pagina",
+                            "users": [3],
+                            "start_ts": "0000000",
+                            "end_ts": "1111111"},
+                        {   "name": "parser json",
+                                           "users": [1],
+                                            "start_ts": "0000000",
+                                            "end_ts": "1111111"},
+                        {   "name": "parser json",
+                                           "users": [1],
+                                            "start_ts": "0000000",
+                                            "end_ts": "1111111"}
+                    ]}
+            ]}],
+    "users": [
+        {
+            "name": "Riccardo",
+            "id": 1
+        },
+        {
+            "name": "Matteo",
+            "id": 2
+        }
+    ]
+}

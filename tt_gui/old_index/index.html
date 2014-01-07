@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Timetracking</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <img src="images/beFair.jpg" /> -->
+          <a class="navbar-brand" href="#">Timetracker</a>
+
+            <form class="form-horizontal list-inline" role="form">
+                  <input type="email" class="form-inline" id="inputEmail3" placeholder="Email">
+             
+                  <input type="password" class="form-inline" id="inputPassword3" placeholder="Password">
+                
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+             
+                  <button type="submit" class="btn btn-default">Sign in</button>
+          
+            </form>
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!--<li class="active"><a href="#">Home</a></li>-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead"></p>
+      </div>
+     <button id="json" type="button">Click to load car sale report (json type)</button>
+     <div id="json-div">
+     </div>
+
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function (){
+        $("#json").click(function(){ 
+           $.getJSON("js/test.json", function(data){
+                  var html = [];
+       
+                  /* loop through array */
+                  $.each(data, function(index, d){           
+                      html.push("Manufacturer : ", d.Cost_holder.ra_display_name, ", ",
+                                "Sold : ", d.users.id, ", ",
+                                "Month : ", d.activities.start_ts, "<br>");
+                  });
+
+                  $("#json-div").html(html.join('')).css("background-color", "orange");
+                });
+          });
+        });
+      </script>
+  </body>
+</html>
